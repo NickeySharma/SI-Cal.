@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            div{
+                border: 2px solid red;
+                border-radius: 20px;
+                height: 250px;
+                width: 380px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js">
+
+        </script>
+    </head>
+    <body ng-app="">
+        <div>
+            <h3>&nbsp;Simple Interest Calculator using AngularJs</h3>
+            Principle Amount&nbsp;&nbsp;<input type="number" ng-model="p_amt"><br><br>
+            Rate of Interest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" ng-model="r_value"><br><br>
+            Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" ng-model="time"><br><br>
+            Simple Interest&nbsp;&nbsp; {{p_amt*r_value*time/100}}
+        </div>
+    </body>
+</html>
